@@ -1,8 +1,8 @@
-mod guess_module;
+mod loop_module;
 
 
 fn main() {
-    guess_module::guess();
+    loop_module::loop_fn5();
 }
 
 
