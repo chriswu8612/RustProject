@@ -1,10 +1,9 @@
-mod loop_module;
+mod slice_module;
 
-
+// next: https://doc.rust-lang.org/book/ch05-00-structs.html
 fn main() {
-    loop_module::loop_fn5();
+    slice_module::slice_array_fn();
 }
-
 
 
 
