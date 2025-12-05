@@ -1,8 +1,8 @@
-mod struct_module;
+mod enum_module;
 
-// next: https://doc.rust-lang.org/book/ch06-00-enums.html
+// next: https://doc.rust-lang.org/book/ch06-02-match.html
 fn main() {
-    struct_module::rect_fn();
+    enum_module::opt();
 }
 
 
