@@ -1,8 +1,8 @@
-mod enum_module;
+mod match_module;
 
-// next: https://doc.rust-lang.org/book/ch06-02-match.html
+// next: https://doc.rust-lang.org/book/ch06-03-if-let.html
 fn main() {
-    enum_module::opt();
+   match_module::roll_dice();
 }
 
 
