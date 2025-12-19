@@ -27,6 +27,21 @@ pub fn value_in_cents(coin: Coin) -> u8 {
     }
 }
 
+pub fn coin_match(coin: Coin) {
+    let mut count = 0;
+    if let Coin::Quarter(state) = coin {
+        println!("State quarter from {state:?}!")
+    } else {
+        println!("No match");
+        count += 1
+    }
+}
+
+pub fn display_coin_match() {
+    coin_match(Coin::Quarter(UsState::Alabama));
+    coin_match(Coin::Penny);
+}
+
 pub fn dispaly_coin_values() {
     let mut v = value_in_cents(Coin::Quarter(UsState::Alabama));
     println!("Value of quarter is {v} cents");

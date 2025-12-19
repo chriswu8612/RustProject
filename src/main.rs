@@ -1,8 +1,8 @@
 mod match_module;
 
-// next: https://doc.rust-lang.org/book/ch06-03-if-let.html
+// next: https://doc.rust-lang.org/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html
 fn main() {
-   match_module::roll_dice();
+   match_module::display_coin_match();
 }
 
 
