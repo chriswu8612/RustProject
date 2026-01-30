@@ -1,9 +1,7 @@
-
 use std::{cmp::Ordering, io};
 use rand::Rng;
 
-
-pub fn guess() {
+pub fn guess_fn() {
     println!("Guess the number!");
     let secret_number = rand::rng().random_range(1..=100);
 

@@ -5,7 +5,7 @@ enum PaymentMethod {
     Crypto(String),
 }
 
-pub fn pay() {
+pub fn pay_fn() {
     let method1 = PaymentMethod::Cash;
     let method2 = PaymentMethod::CreditCard;
     let method3 = PaymentMethod::Crypto("USDC".to_string());
