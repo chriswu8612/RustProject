@@ -2,7 +2,7 @@
 mod pay;
 use pay::pay_fn;
 
-// next: https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html
+// next: https://doc.rust-lang.org/book/ch08-01-vectors.html
 fn main() {
    pay_fn();
 }
