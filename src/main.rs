@@ -1,10 +1,12 @@
 // use RustProject::{back_of_house::{eat_at_restaurant2, fix_incorrect_order}, eat_at_restaurant};
-mod pay;
-use pay::pay_fn;
 
-// next: https://doc.rust-lang.org/book/ch08-01-vectors.html
+use RustProject::back_of_house::{loop_thru_vec, mutvec, printvec};
+
+// next: https://doc.rust-lang.org/book/ch08-02-strings.html
 fn main() {
-   pay_fn();
+   printvec();
+   loop_thru_vec();
+   mutvec();
 }
 
 

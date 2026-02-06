@@ -49,4 +49,35 @@ pub mod back_of_house {
         meal.toast = String::from("Wheat");
         println!("I'd like {} toast please", meal.toast);
     }
+
+    pub fn printvec() {
+        let v = vec![1,2,3,4,5];
+
+        let third: &i32 = &v[2];
+        println!("The third element is {third}");
+
+        let third: Option<&i32> = v.get(2);
+        match third {
+            Some(third) => println!("The third element is {third}"),
+            None => println!("There is no third element"),
+        }
+    }
+
+    pub fn loop_thru_vec() {
+        let v = vec!(100, 32, 57);
+        for i in &v {
+            println!("{i}");
+        }
+    }
+
+    pub fn mutvec() {
+        let mut v = vec![100, 32, 57];
+        for i in &mut v {
+            *i += 50;
+        }
+
+        for i in &v {
+            println!("mut {i}")
+        }
+    }
 }
