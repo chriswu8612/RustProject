@@ -1,3 +1,4 @@
+use std::fs::File;
 mod front_of_house {
     pub mod hosting {
         pub fn add_to_wait_list() {
@@ -12,6 +13,15 @@ pub fn eat_at_restaurant() {
 
     // Relative path
     front_of_house::hosting::add_to_wait_list();
+}
+
+pub fn open_greeting_file() {
+    let greeting_file_result = File::open("hello.txt");
+
+    let greeting_file = match greeting_file_result {
+        Ok(file) => file,
+        Err(error) => panic!("Problem opening the file: {error:?}")
+    };
 }
 
 fn deliver_order() {

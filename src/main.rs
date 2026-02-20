@@ -1,12 +1,8 @@
-// use RustProject::{back_of_house::{eat_at_restaurant2, fix_incorrect_order}, eat_at_restaurant};
+use RustProject::open_greeting_file;
 
-use RustProject::back_of_house::{loop_thru_vec, mutvec, printvec};
-
-// next: https://doc.rust-lang.org/book/ch08-02-strings.html
+// next: https://doc.rust-lang.org/book/ch09-03-to-panic-or-not-to-panic.html
 fn main() {
-   printvec();
-   loop_thru_vec();
-   mutvec();
+   open_greeting_file();
 }
 
 
